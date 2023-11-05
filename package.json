@@ -1,0 +1,30 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo list",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "debug": "ndb server.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai-http": "^4.4.0",
+    "const": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
