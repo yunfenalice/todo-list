@@ -24,6 +24,9 @@ if (process.env.NODE_ENV === "development") {
 app.use(cors());
 app.use(express.json());
 app.use("/api/v1/tasks", taskRouter);
+app.get("/test", (req, res) => {
+  res.send("Hello, World! This is my Express app.");
+});
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
