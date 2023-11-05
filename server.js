@@ -27,12 +27,12 @@ app.use("/api/v1/tasks", taskRouter);
 app.get("/test", (req, res) => {
   res.send("Hello, World! This is my Express app.");
 });
-// mongoose
-//   .connect(DB, {
-//     useNewUrlParser: true,
-//     retryWrites: true,
-//   })
-//   .then(() => console.log("DB connection successful!"));
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    retryWrites: true,
+  })
+  .then(() => console.log("DB connection successful!"));
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
